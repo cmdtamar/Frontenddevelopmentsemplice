@@ -1,0 +1,928 @@
+/* CSS Document */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    background-color: #020202;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #ffffff;
+    align-content: center;
+    width: 90%;
+    max-width: 60em;
+}
+
+
+
+/* Navigatie bar */
+
+nav {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 3em;
+    padding: 0;
+}
+
+nav img {
+    height: 4em;
+    width: auto;
+    padding: 0;
+    float: left;
+}
+
+nav a {
+    font-family: sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    float: right;
+    display: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+.getsemplice {
+    background-color: #ffd300;
+    color: black;
+}
+
+
+/* Menu openen en text */
+
+.buttonmenu {
+    float: right;
+    height: 4em;
+    width: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: none;
+}
+
+
+.buttonmenu span {
+    position: absolute;
+    width: 1.5em;
+    height: 2px;
+    background-color: white;
+}
+
+.buttonmenu span:first-of-type {
+    transform: translatey(-5px);
+}
+
+.buttonmenu span:last-of-type {
+    transform: translatey(5px);
+}
+
+body.menuOpen .buttonmenu span {
+    background-color: #ffd300;
+    transition: .5s ease-out;
+}
+
+body.menuOpen .buttonmenu span:first-of-type {
+    transform: translatey(0) rotate(45deg);
+}
+
+body.menuOpen .buttonmenu span:nth-of-type(2) {
+    opacity: 0;
+}
+
+body.menuOpen .buttonmenu span:last-of-type {
+    transform: translatey(0) rotate(-45deg);
+}
+
+
+.invisible {
+    display: none;
+}
+
+/* het menu uitgeklapt */
+
+#menu ul {
+    z-index: 10;
+    width: 90%;
+    height: 100%;
+    font-family: sans-serif;
+    background-color: #ffd300;
+    text-align: center;
+    position: fixed;
+    list-style-type: none;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    animation-duration: 2s;
+}
+
+
+#menu ul li a {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+    list-style-type: none;
+    list-style-position: inside;
+    line-height: 3em;
+    margin-bottom: 3em;
+}
+
+
+
+/* Slogan van Semplice */
+
+h1 {
+    font-family: 'MillerDisplay Light', serif;
+    font-size: 4em;
+    line-height: 1em;
+    font-weight: lighter;
+    width: 100%;
+}
+
+
+/* Tekst over Semplice */
+
+#aboutsemplice {
+    color: #ffffff;
+    font-family: 'MillerDisplay Light', serif;
+    font-size: 2em;
+    font-weight: lighter;
+    line-height: 1.2em;
+    width: 100%;
+}
+
+
+a {
+    color: #ffd300;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* de video */
+
+video {
+    width: 100%;
+    margin-top: 2em;
+    z-index: 1;
+}
+
+
+
+/* De footer */
+
+
+h2 {
+    color: #565656;
+    font-family: 'MillerDisplay Light', sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+
+footer p {
+    color: #ffffff;
+    background-color: #000000;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-weight: 100;
+    line-height: 2em;
+}
+
+footer {
+    margin-top: 10em;
+}
+
+footer ul {
+    margin: 0;
+    Padding: 0;
+}
+
+
+footer li {
+    color: #ffffff;
+    background-color: #000000;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-weight: 100;
+    line-height: 2em;
+    list-style-type: none;
+}
+
+footer img {
+    width: 140px;
+    height: auto;
+}
+
+
+/* De form in de footer */
+form {
+    display: grid;
+    margin-bottom: 6em;
+    width: auto;
+}
+
+form p {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#fname {
+    border: 0.2em solid #292a2c;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    background-color: #020202;
+    padding: 1em;
+    grid-column: 1;
+    grid-row: 2;
+    color: white;
+}
+
+#email {
+    border: 0.2em solid #292a2c;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    background-color: #020202;
+    padding: 1em;
+    grid-column: 1;
+    grid-row: 3;
+    color: white;
+}
+
+input[type=submit] {
+    background-color: #ffd300;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 3.5em;
+    grid-column: 2;
+    grid-row: 2 / span 3;
+}
+
+
+/* Style extra voor showcase pagina */
+
+h3 {
+    font-family: 'MillerDisplay Light', sans-serif;
+    font-size: 2em;
+    font-weight: 550;
+    text-align: center;
+    width: 100%;
+}
+
+.introshowcase {
+    color: #565656;
+    font-family: 'MillerDisplay Light', serif;
+    font-size: 1.15em;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+/* Showcase: Button Countries */
+
+
+.buttoncountries {
+    position: relative;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-decoration: underline;
+    border: none;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    margin-right: 10%;
+}
+
+.buttoncountries:hover {
+    background-color: gray;
+}
+
+
+/* Showcase: Button Countries dropdown geopend */
+
+.lijstjecontent {
+    text-align: left;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    list-style: none;
+    margin: 0;
+    padding-left: 2em;
+    padding-right: 0;
+    padding-bottom: 5em;
+    width: 100%;
+}
+
+.lijstjecontent li a {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 3em;
+    padding-left: 1em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.lijstjecontent li a:hover {
+    color: #ffd300;
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 3em;
+}
+
+/* Showcase: Button Professions */
+
+.buttonprofessions {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-decoration: underline;
+    border: none;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+}
+
+.buttonprofessions:hover {
+    background-color: gray;
+}
+
+
+/* Showcases informatie */
+
+.middletext {
+    font-size: 3em;
+    font-weight: 100;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.achtergrond {
+    width: 100%;
+    display: block;
+}
+
+.ipad img {
+    position: absolute;
+    left: 1em;
+    Bottom: 1em;
+    height: 10em;
+    width: auto;
+    display: block;
+}
+
+.iphone img {
+    position: absolute;
+    right: 1em;
+    Bottom: 1em;
+    height: 15em;
+    width: auto;
+    display: none;
+}
+
+
+/* Showcase 1 Roof Studio */
+.showcasefirst {
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    align-content: center;
+    margin-bottom: 2em;
+    margin-top: 6em;
+}
+
+.showcase1bedrijf {
+    display: grid;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.showcase1bedrijf img {
+    width: 4em;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.showcase1bedrijf a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: underline;
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+.showcase1bedrijf p {
+    color: #565656;
+    font-family: sans-serif;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+
+/* Showcase 1 Roof Studio Hover */
+
+.showcasefirst:hover .showcase1inhoud {
+    opacity: 0.5;
+    transition: .5s ease;
+}
+
+.showcasefirst:hover .ipad img {
+    left: -2em;
+    Bottom: -2em;
+    transition: .5s ease;
+}
+
+.showcasefirst:hover .iphone img {
+    right: -2em;
+    Bottom: -2em;
+    transition: .5s ease;
+}
+
+.showcasefirst:hover .middletext {
+    opacity: 1.5;
+}
+
+
+/* Showcase 2 This Studio */
+
+.showcasesecond {
+    z-index: 2;
+    width: 100%;
+    position: relative;
+    align-content: center;
+    margin-bottom: 1em;
+}
+
+
+.showcase2bedrijf {
+
+    display: grid;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.showcase2bedrijf img {
+    width: 4em;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+
+}
+
+.showcase2bedrijf a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: underline;
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+.showcase2bedrijf p {
+    color: #565656;
+    font-family: sans-serif;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+
+/* Showcase 2 This Studio Hover */
+
+.showcasesecond:hover .showcase2inhoud {
+    opacity: 0.5;
+    transition: .5s ease;
+}
+
+.showcasesecond:hover .middletext {
+    opacity: 1.5;
+}
+
+.showcasesecond:hover .ipad img {
+    left: -2em;
+    Bottom: -2em;
+    transition: .5s ease;
+}
+
+.showcasesecond:hover .iphone img {
+    right: -2em;
+    Bottom: -2em;
+    transition: .5s ease;
+}
+
+
+/* Showcase 3 Bruno Longoni */
+
+.showcasethird {
+    z-index: 2;
+    width: 100%;
+    position: relative;
+    align-content: center;
+    margin-bottom: 1em;
+}
+
+
+.showcase3bedrijf {
+
+    display: grid;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.showcase3bedrijf img {
+    width: 4em;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+
+}
+
+.showcase3bedrijf a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: underline;
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+.showcase3bedrijf p {
+    color: #565656;
+    font-family: sans-serif;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.ipad3 img {
+    position: absolute;
+    right: 6em;
+    Bottom: 10em;
+    height: 10em;
+    width: auto;
+    display: block;
+}
+
+
+/* Showcase 3 Bruno Longoni Hover */
+
+.showcasethird:hover .showcase3inhoud {
+    opacity: 0.5;
+    transition: .5s ease;
+}
+
+.showcasethird:hover .middletext {
+    opacity: 1.5;
+    top: 40%;
+}
+
+.showcasethird:hover .ipad3 img {
+    right: 4em;
+    Bottom: 8em;
+    transition: .5s ease;
+}
+
+
+
+/* Showcase 4 Unless You will */
+
+.showcasefourth {
+    z-index: 2;
+    width: 100%;
+    position: relative;
+    align-content: center;
+    margin-bottom: 1em;
+}
+
+
+.showcase4bedrijf {
+
+    display: grid;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.showcase4bedrijf img {
+    width: 4em;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+
+}
+
+.showcase4bedrijf a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: underline;
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+.showcase4bedrijf p {
+    color: #565656;
+    font-family: sans-serif;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.ipad4 img {
+    position: absolute;
+    right: 5.5em;
+    Bottom: 11em;
+    height: 10em;
+    width: auto;
+    display: block;
+}
+
+
+/* Showcase 3 Bruno Longoni Hover */
+
+.showcasefourth:hover .showcase4inhoud {
+    opacity: 0.5;
+    transition: .5s ease;
+}
+
+.showcasefourth:hover .middletext {
+    opacity: 1.5;
+    top: 40%;
+}
+
+.showcasefourth:hover .ipad4 img {
+    right: 3.5em;
+    Bottom: 9em;
+    transition: .5s ease;
+}
+
+/* van de laatste 2 die in een grid kunnen zetten */
+
+.laatstetwee {
+    display: grid;
+}
+
+
+
+
+
+
+
+/* Responsiviteit van de website */
+
+
+
+@media (min-width: 544px) {
+    h1 {
+        padding-left: 7%;
+        padding-right: 7%;
+        font-size: 4.5em;
+    }
+
+    h3 {
+        font-size: 3em;
+    }
+
+    #aboutsemplice {
+        font-size: 2.2em;
+        line-height: 1.2em;
+    }
+
+    video {
+        width: 100%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    /* showcase page*/
+
+    .filtercp {
+        display: grid;
+        margin-bottom: 6em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .countries {
+        box-sizing: border-box;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .professions {
+        box-sizing: border-box;
+        grid-column: 2;
+        grid-row: 1
+    }
+
+
+
+    .ipad img {
+        height: 14em;
+    }
+
+}
+
+
+
+@media (min-width: 768px) {
+    main {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    h3 {
+        font-size: 3.5em;
+    }
+
+    #footercontent {
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #footercontent section {
+
+        width: 15em;
+        ;
+        height: 10em;
+        ;
+    }
+
+    #footercontent p {
+        margin-top: 1em;
+    }
+
+    footer p {
+        margin-top: 15em;
+    }
+
+    video {
+        width: 100%;
+        margin-top: 5em;
+        margin-bottom: 4em;
+    }
+
+    /* showcase page*/
+
+    .introshowcase {
+        font-size: 1.5em;
+    }
+
+    .ipad img {
+        height: 15em;
+    }
+
+    /* de laatste twee showcases  met hover*/
+
+    #third {
+        box-sizing: border-box;
+        grid-column: 1;
+        grid-row: 1;
+
+    }
+
+    #fourth {
+        box-sizing: border-box;
+        grid-column: 2;
+        grid-row: 1;
+
+    }
+
+    .ipad3 img {
+        height: 5em;
+        right: 2em;
+
+    }
+
+    .showcasethird:hover .ipad3 img {
+        right: 1em;
+    }
+
+    .ipad4 img {
+        height: 5em;
+        right: 2em;
+
+    }
+
+    .showcasefourth:hover .ipad4 img {
+        right: 1em;
+    }
+
+
+}
+
+
+
+@media (min-width: 990px) {
+    /* Navigatie wordt ipv hamburgermenu, tekst */
+
+
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 5.5em;
+    }
+
+    h3 {
+        font-size: 4.5em;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .buttonmenu {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+    #aboutsemplice {
+        font-size: 2.2em;
+        line-height: 1.2em;
+    }
+
+    video {
+        width: 100%;
+        margin-top: 7em;
+        margin-bottom: 5em;
+    }
+
+    /* showcase page*/
+    .introshowcase {
+        font-size: 1.8em;
+    }
+
+    .ipad img {
+        height: 20em;
+    }
+
+    .ipad3 img {
+        height: 5em;
+        right: 2em;
+
+    }
+
+    .ipad4 img {
+        height: 5em;
+        right: 2em;
+
+    }
+
+}
+
+.iphone img {
+    display: inline-block;
+}
+
+}
