@@ -33,11 +33,13 @@ The main focus with this project was responsiveness. To make the website work on
 
 The first thing I did was to make an overview of the content Semplice showed on the Homepage. I wrote this down and this gave me a simple hold-on when I started with html. Then I researched what the style of the website it, fonts they use, colours and images. 
 
-### The first design looked like this
+### The first design
+For the first design I made the small-screen version of the homepage.
+
  <img src="images/week3foto1.png" alt="week3foto1">
-  <img src="images/week3foto2.png" alt="week3foto2">
-   <img src="images/week3foto3.png" alt="week3foto3">
-    <img src="images/week3foto4.png" alt="week3foto4">
+ <img src="images/week3foto2.png" alt="week3foto2">
+ <img src="images/week3foto3.png" alt="week3foto3">
+ <img src="images/week3foto4.png" alt="week3foto4">
 
 
 
