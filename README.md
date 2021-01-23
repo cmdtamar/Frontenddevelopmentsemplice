@@ -45,6 +45,15 @@ For the first design I made the small-screen version of the homepage.
  <img src="images/week3foto3.png" alt="week3foto3">
  <img src="images/week3foto4.png" alt="week3foto4">
 
+### The second design
+For the second design I
+
+<img src="images/week8bespreking/kleinscherm1.png" alt="kleinscherm1">
+<img src="images/week8bespreking/kleinscherm2.png" alt="kleinscherm2">
+<img src="images/week8bespreking/kleinscherm3.png" alt="kleinscherm3">
+<img src="images/week8bespreking/grootscherm1.png" alt="grootscherm1">
+<img src="images/week8bespreking/grootscherm2.png" alt="grootscherm2">
+
 
 
 
