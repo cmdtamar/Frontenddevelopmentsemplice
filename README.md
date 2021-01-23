@@ -7,7 +7,7 @@ https://cmdtamar.github.io/Frontenddevelopmentsemplice/
 The main focus with this project was responsiveness. To make the website work on different screens and adjust the details. 
 
 
-## Bronnenlijst
+## Source list
 
 1. CSS Peeper Chrome Extension 
 2. https://www.w3schools.com/html/html_layout.asp
@@ -29,7 +29,18 @@ The main focus with this project was responsiveness. To make the website work on
 18. https://www.w3schools.com/cssref/css3_pr_transform.asp
 
 
-## herkansingsgesprek (week 9)
+## Work approach
+
+The first thing I did was to make an overview of the content Semplice showed on the Homepage. I wrote this down and this gave me a simple hold-on when I started with html. Then I researched what the style of the website it, fonts they use, colours and images. 
+
+### The first design looked like this
+ <img src="images/week3foto1.png" alt="week3foto1">
+  <img src="images/week3foto2.png" alt="week3foto2">
+   <img src="images/week3foto3.png" alt="week3foto3">
+    <img src="images/week3foto4.png" alt="week3foto4">
+
+
+
 
 Ik heb de hele week zitten puzzelen aan deze website om het helemaal responsive te maken, alles te laten afmeten, het menu dat veranderd en goed opent. Javascript dat goed werkt en dat ik eindelijk snap en de 2e pagina waar ik erg  trots op ben. 4 filmpjes kijken, 5 websites bezoeken, en nog meer om 1 code goed te kunnen toepassen en het te laten werken zoals ik wil. In deze website zit bloed, zweet en tranen (en een aantal mental breakdown) en slapenlozen nachten van doorwerken, maar hier is die dan en ik ben er trots op. Met mijn weinige ervaring heb ik iets moois in elkaar kunnen zetten, dat ik begrijp en dat goed responsive is. sommige buttons zijn meer dan alleen buttons, de Countries Button zorgde er op een moment voor dat mijn hele menu het niet meer deed, waar ik dagen aan had gewerkt. Maar ik heb het kunnen oplossen en nu doen ze het beide goed. De website ziet er een beetje anders uit, omdat sommige elementen zwarte pisten waren en ik heb daar mijn eigen variant voor gemaakt die in de stijl past en netjes gecodeerd is. Ik ben er trots op en ik hoop dat u dat terug kunt zien.
 
